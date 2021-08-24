@@ -160,7 +160,7 @@ class IPv4Tool
     public static function readraw($fd, $offset = null, $size = 0)
     {
         if (!is_null($offset)) {
-            fseek($fd, $offset);
+            fseek($fd, (int)$offset);
         }
         return fread($fd, $size);
     }
@@ -168,7 +168,7 @@ class IPv4Tool
     public static function read1($fd, $offset = null)
     {
         if (!is_null($offset)) {
-            fseek($fd, $offset);
+            fseek($fd, (int)$offset);
         }
         $a = fread($fd, 1);
         return @unpack("C", $a)[1];
@@ -177,7 +177,7 @@ class IPv4Tool
     public static function read4($fd, $offset = null)
     {
         if (!is_null($offset)) {
-            fseek($fd, $offset);
+            fseek($fd, (int)$offset);
         }
         $a = fread($fd, 4);
         return @unpack("V", $a)[1];
@@ -186,7 +186,7 @@ class IPv4Tool
     public static function read8($fd, $offset = null, $size = 8)
     {
         if (!is_null($offset)) {
-            fseek($fd, $offset);
+            fseek($fd, (int)$offset);
         }
         $a = fread($fd, $size) . "\0\0\0\0\0\0\0\0";
         return @unpack("P", $a)[1];
@@ -195,7 +195,7 @@ class IPv4Tool
     public static function readstr($fd, $offset = null)
     {
         if (!is_null($offset)) {
-            fseek($fd, $offset);
+            fseek($fd, (int)$offset);
         }
         $str = "";
         $chr = static::read1($fd, $offset);

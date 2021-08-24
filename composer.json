@@ -1,0 +1,23 @@
+{
+    "name": "zx-inc/zxipdb",
+    "description": "IPv4/IPv6 offline address database.IPv4/IPv6双栈地址离线数据库。IPv4 by 纯真网络，IPv6 by ZX Inc.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Charles",
+            "email": "ritaswc@163.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZxInc\\Zxipdb\\": "src/ZxIPAddress"
+        }
+    }
+}

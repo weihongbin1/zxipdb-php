@@ -1,3 +1,4 @@
+<a href="https://github.com/ZX-Inc/zxipdb-php/actions"><img src="https://img.shields.io/github/workflow/status/ZX-Inc/zxipdb-php/Unit%20Test%20by%20PHPUnit" alt="Build Status"></a>
 <a href="https://packagist.org/packages/ZX-Inc/zxipdb-php"><img src="https://img.shields.io/packagist/dt/zx-inc/zxipdb" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/ZX-Inc/zxipdb-php"><img src="https://img.shields.io/packagist/v/ZX-Inc/zxipdb" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/ZX-Inc/zxipdb-php"><img src="https://img.shields.io/packagist/l/ZX-Inc/zxipdb" alt="License"></a>
